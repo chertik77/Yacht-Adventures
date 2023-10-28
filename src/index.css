@@ -1,1 +1,62 @@
 @import url('node_modules/modern-normalize/modern-normalize.css');
+@import url('./css/reset.css');
+@import url('./css/fonts.css');
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-light-color: #f6f5ef;
+  --primary-dark-color: #11131f;
+  --secondary-dark-color: #1f212d;
+  --primary-brand-color: #93abae;
+  --transition-timings: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: DMSans, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.28px;
+  overscroll-behavior: none;
+  color: var(--primary-light-color);
+  background-color: var(--primary-dark-color);
+}
+
+.container {
+  max-width: 375px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+@media only screen and (width >= 768px) {
+  .container {
+    max-width: 768px;
+    padding-inline: 32px;
+  }
+  body {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.32px;
+  }
+}
+
+@media only screen and (width >= 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.subtitle {
+  background: var(linear-gradient(92deg, #bec7c2 41.03%, #a1b5ba 90.31%));
+  background-clip: text;
+}

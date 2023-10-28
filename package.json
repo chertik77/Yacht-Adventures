@@ -4,15 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --open",
+    "dev": "npm run lint && vite --open",
     "build": "vite build",
     "lint": " eslint . && stylelint src/*.css"
   },
   "devDependencies": {
     "eslint": "^8.52.0",
     "glob": "^10.3.10",
+    "lightningcss": "^1.22.0",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^34.0.0",
+    "terser": "^5.22.0",
     "vite": "^4.4.5",
     "vite-plugin-minify": "^1.5.2"
   },

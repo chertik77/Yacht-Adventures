@@ -8,10 +8,10 @@ export default defineConfig({
     rollupOptions: {
       input: glob.sync('./src/index.html'),
     },
-    minify: false,
-    cssMinify: false,
+    cssMinify: 'lightningcss',
+    minify: 'terser',
     outDir: '../dist',
     assetsDir: '',
   },
-  plugins: [ViteMinifyPlugin({ minifyCSS: true, minifyJS: true })],
+  plugins: [ViteMinifyPlugin()],
 });
