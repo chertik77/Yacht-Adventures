@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "lint": " eslint ."
   },
   "devDependencies": {
+    "eslint": "^8.52.0",
     "glob": "^10.3.10",
     "vite": "^4.4.5",
     "vite-plugin-minify": "^1.5.2"
